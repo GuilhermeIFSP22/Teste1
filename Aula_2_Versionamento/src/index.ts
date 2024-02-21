@@ -22,7 +22,36 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
 
 */
 
+// Exercício 1
 
+let nomeCompleto : String;
+let Idade : Number;
+let email : String;
+let isAtivo : Boolean;
+
+// Exercício 2
+
+type Contato = {
+    email : String;
+    telefone : String;
+}
+
+type Aluno = Contato & {
+    nome : String;
+    sobrenome : String;
+    idade : Number;
+}
+
+
+let estudante : Aluno = {
+    nome : "Zé",
+    sobrenome : "da Manga",
+    idade : 20,
+    email : "gsufigudosifugiosuiof@gmail.com",
+    telefone : "15 9919 - 3383",
+}
+
+console.log(estudante);
 /*
 
 Exercício:
@@ -45,3 +74,13 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     Em seguida, imprima todas as variáveis e propriedades do objeto produto usando console.log.
 
 */
+
+// Exercício 1
+
+let nomeProduto : String;
+let preco : Number;
+let disponivel : Boolean;
+
+// Exercício 2
+
+let Produto : {nome : String, preco : Number, estoque : Number, categoria : String[]}
